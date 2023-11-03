@@ -1,0 +1,211 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* Colors */
+
+.bg-cyan {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.color-white {
+  color: white;
+}
+.color-cyan {
+  color: hsl(179, 62%, 43%);
+}
+
+.bg-yellow {
+  background-color: hsl(71, 73%, 54%);
+}
+
+.color-yellow {
+  color: hsl(71, 73%, 54%);
+}
+
+.bg-light-grey {
+  background-color: hsl(204, 43%, 93%);
+}
+
+.color-light-grey {
+  color: hsl(204, 43%, 93%);
+}
+
+.bg-grayish-blue {
+  background-color: hsl(218, 22%, 67%);
+}
+
+.color-grayish-blue {
+  color: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Common styles */
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2,
+h3 {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  text-transform: capitalize;
+  color: white;
+}
+
+p {
+  line-height: 2rem;
+
+  font-size: 1.2rem;
+}
+
+span {
+  padding-bottom: 2rem;
+}
+
+/* Border */
+.border-radius-0-4rem {
+  border-radius: 0.4rem;
+}
+
+/* Text */
+.font-size-1-2rem {
+  font-size: 1.2rem;
+}
+
+/* Width */
+
+.wd-70 {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wd-50 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Flex */
+.d-flex {
+  display: flex;
+}
+
+/* Padding */
+
+.padding-3rem {
+  padding: 3rem;
+}
+
+.padding-3-6rem {
+  padding: 3rem 6rem 3rem 3rem;
+}
+
+.padding-bottom-2rem {
+  padding-bottom: 2rem;
+}
+.padding-bottom-3rem {
+  padding-bottom: 3rem;
+}
+/* Desktop styles */
+
+.container {
+  width: 900px;
+  overflow: hidden;
+}
+
+/* Section 1  */
+
+.section-1 {
+  padding: 4rem 2rem 4rem 4rem;
+}
+
+/* section 2 */
+
+.section-2 .wd-50:nth-child(2) {
+  background-color: hsl(179, 62%, 43%, 0.8);
+}
+
+.btn {
+  padding: 1rem 0rem;
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+/* Mobile styles */
+
+@media screen and (max-width: 376px) {
+  .container {
+    width: 300px;
+    margin: 5rem auto;
+  }
+  .section-1 {
+    padding: 2rem 1rem;
+  }
+  .section-2 .d-flex .wd-50:nth-of-type(1) {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    padding-bottom: 1.5rem !important;
+  }
+
+  h2,
+  h3 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+  .section-1 div h2,
+  .section-2 .wd-50:nth-of-type(2) p {
+    line-height: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  .section-2 .d-flex {
+    flex-direction: column;
+  }
+
+  .section-2 .wd-50 {
+    width: 100%;
+  }
+
+  .section-2 .wd-50:nth-of-type(2) {
+    padding: 2rem 4rem 2rem 2rem;
+  }
+}
